@@ -21,7 +21,6 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    // ⚠️ DEV ONLY: ดู user ทั้งหมด ไม่เช็ค role
     @GetMapping
     public List<User> getAllUsers() {
         return userRepository.findAll();
